@@ -410,7 +410,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        With &#10084; by 24Codelabz
+        With &#10084; by Gideon Abbey (24Codelabz)
       </footer>
     </div>
   );
