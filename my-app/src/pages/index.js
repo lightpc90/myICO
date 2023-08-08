@@ -332,7 +332,7 @@ export default function Home() {
           <div className={styles.description}>
             {tokensToBeClaimed * 10} Tokens can be claimed!
           </div>
-          <button className={styles.button} onClick={claimCryptoDevTokens}>
+          <button className={styles.button} onPress={claimCryptoDevTokens}>
             Claim Tokens
           </button>
         </div>
@@ -354,7 +354,7 @@ export default function Home() {
         <button
           className={styles.button}
           disabled={!(tokenAmount > 0)}
-          onClick={() => mintCryptoDevToken(tokenAmount)}
+          onPress={() => mintCryptoDevToken(tokenAmount)}
         >
           Mint Tokens
         </button>
@@ -390,7 +390,7 @@ export default function Home() {
                 {isOwner ? (
                   <div>
                   {loading ? <button className={styles.button}>Loading...</button>
-                           : <button className={styles.button} onClick={withdrawCoins}>
+                           : <button className={styles.button} onPress={withdrawCoins}>
                                Withdraw Coins
                              </button>
                   }
@@ -399,7 +399,7 @@ export default function Home() {
                 }
             </div>
           ) : (
-            <button onClick={connectWallet} className={styles.button}>
+            <button onPress={connectWallet} className={styles.button}>
               Connect your wallet
             </button>
           )}
